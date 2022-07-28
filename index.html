@@ -7,7 +7,41 @@
     <title>Vite App</title>
   </head>
   <body>
-    <main class="pokedex">
+    <main class="pokedex p-4">
+      <h1 class="text-lg">Pokemon list</h1>
+      <div id="new-pokemon-form">
+        <div class="field mb-4">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="bg-yellow-100 p-2" />
+        </div>
+        <div class="field mb-4">
+          <label for="type">Type</label>
+          <select id="type" name="type" class="bg-yellow-100 p-2">
+            <option value="bug">Bug</option>
+            <option value="dark">Dark</option>
+            <option value="dragon">Dragon</option>
+            <option value="electric">Electric</option>
+            <option value="fairy">Fairy</option>
+            <option value="fighting">Fighting</option>
+            <option value="fire">Fire</option>
+            <option value="flying">Flying</option>
+            <option value="ghost">Ghost</option>
+            <option value="grass">Grass</option>
+            <option value="ground">Ground</option>
+            <option value="ice">Ice</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Poison</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="steel">Steel</option>
+            <option value="water">Water</option>
+          </select>
+        </div>
+        <button id="btn-create" class="bg-green-700 text-white px-6 py-2">
+          Create New Pokemon
+        </button>
+      </div>
+
       <div id="pokemon-list"></div>
     </main>
     <script type="module" src="/main.js"></script>
